@@ -1,1 +1,120 @@
-import lzma,base64;exec(lzma.decompress(base64.b85decode('{Wp48S^xk9=GL@E0stWa8~^|S5YJf5;1b*i%Uu8whz91lNLh}j5h0;|IZvW%tLW|Cm#~;H19EibG+hDVlqr1DaNLp+2ulI}M=zf)ea!`|3x?$e=|?wtB7kII?lppYPb9J)5EuV$au*~_lo{{6l17>R6!_!WW0;8axNwJHfPOe?>ysE<tR&9Ri;Mv-^D?!9wIAyk{^Fmc(>75_ymitl#zh}`EVOw!y9&8rvv!GXRhU=Uggs}(9Los+dC!MQc-zE9RJQpU^!2rCr@RS!fUWR0dX6Kfban`d|0g|-F)JAROaj}E?x{v5ysWzg9p?@P?Hv*8fDc1-6MdBRu)LgGuLlo^VlQd)8R4<=4k?1V!FGo-S~#I+6z*oH^Y~<2zC4P$!mRoXic8Np@<7iLmac*@KgyqQM=I2|q1qUq5MR#&cna9Okj+Aoz20&5!u5s|h_93cyj+W8eYOSht8ZH$n!&^#8}4xSrNO;O2#Psp8cB8*SFTX`BSw&CV*?M7q#)}3Uf-z;xf#-t^-j8~LVPMszY#&aHs9<g4q{i7Rh&yzjlaK-T?35_9cP62VI74GnQ~zDWbJ4UbM{0lgS>t1I{b!16O@r79L^9)>)jES)89dm$@$TaSXv$la71e~93VxVK*$nbMfQ7gH-ykfq8tjH=lCclU#q!%>jx!Ofab`F*QN9$5tSvJSNO;{Tz+>wZG+d+G<>2f3)qxJe0MZ(_CgXFvkIQV*@hnkMeqf#=v?u{Ji<%41HtnRdsJho+_4e>cR(<1C|tD=-qV9Q8)!qhgCr2dM>KkZn<dQaF0f1b=n4CCHs8Se)11mG-V2@C=y7qX6{(8ioySG&0K+4&1=b^OHHoybXtR%xnGUNMaKK^{h&HwZ0%F<ys1Q2)<r#3)QF86xeJzfbL~!L9&;{H}5|HZ)Wbnn_-#lEM8}6J9Ql+h+dkS3T6d}7?i5e-V#Hn1`A@rVy0N!d<8m*8vY{<62Z57qXq2*7`e~I+Jt>iv1HmsBesI2Fhl(@xIOU|(D(kwXvcs_*3wx_qpf3psG7Lw1(j~Q^jw*vNO;s5Mo$~<zs*r$!?DO(KljrSN`ej2sUoJ8zGl^P6Ywp&Lo|M=e5Y!>vCl=B)uU9tN^TtoE-mNmof>?D*nvwC%mAY-N6F6n+m$Bn_25$9tR(VZoavvkuRQOBNVjz@ls7sP7&@&xQ6%K~=jf)2p~8oYWA-vv`)&YX1s<T)X8*+UKdDl;9m3y}uVeWS*Em)n>)<5u5pRyYm|%0c1vfj6H8hopO~O(69h^DnCH=UK%*PHM=hC5C9DUOC3f{~(V<RtB5Xy+l!RjVgi@xc_tJBj+W+cy3g{5EbQQg$x?`0-2^@1-MTsD>Hb%=6`9}&=*33;UF<s#r8yYWlF}+*j3KBekpA%*doC0xYTqVh1OW`{gBJnB0@raLTPg^=67>dSlIh5iKDHz!Dv=rkS6Rt6gI=-BSVx4{|&!FW&9HdG9@afxiJ?|tUqz;&u4FBI@Btol=Xf7M%*XcNE2Q}R~cPkbnbdi=x9;xj?;ZCh6@OQG<d5A8x$V`=8>DME#0#@TW)1#)okTOJH=6hc3BX7z*kk8c^CH!)`W1+Pru&Cm|ui<ESA|*_HFh%lW21p@Owks752O%hQI4Q#NJ?7Lut;bxif6}+Q3Z={@wH@ve-TE9IImqt@vpcn4D?vYFl|ZD{O2ORG89caS(qSXdFb4Ra(HdS7EJ1pz`+T2jmFr&zMj(DMNb=vlH`KaXdh59zGy!!EYN<yZoq3A_2I!QfKGXu7eU0#%A2NUG^_h^=nU^XZ4AAGPEQ4TK0DEAVF|9m;PG7k^=d@I|VsI6kP$h_I}%h8p6F5hA$jj`$}RXUluAFhoVKHO<RVEvw={;B?im3@YI2S2O4(E`xA^tgJ*0h{wzR_a?R1R8hE*8RFR4dM&{5<23&UrvtuqquWZeBRXQM0$q7TJtylAep})ulB9fP$sc+G&u_r2s&sBJ=^ei9Q*q<EdU{h~@*E=#P+&rBy#W5Jl4_D?uw$38dg`G^<-Tu3f*t*e$5cwwrdxw#sxQJ}<7llIibwyF#8WvGp(ca^4ds5p)u@o4NG!@i%Qg@E~b_W0A7A5SeGhO;L(684Y;&K?dsuD@UXV#Duy3f{#X)X33wmk17I<OHOiFQ8-dlz<p>>u5785U~h6Q%c7%C~=ee&ImWQGn~QNev@ZLs?Ro6tB8VEu&WcjLc}};;Z)io2v#mSWP5x-znkea{o&j2#fqft=F#naoD9Q%d|r2)77h5Lp=F?p$$Q__{sJc(7Rscxg}j(lpAX{D^@}+(kGIvpW&QkC~Ta>bh&D5?wH=T%{(Gq<RAssuIP=Lg_NboJ<vcZLP*vsd~oNe-sp;ybsytZD9U`8c;9+gl4}D--2+85e$MZiA+nL=1jv!=Xzv$*MOP|SqW=S`h2=6f1k44CEYFkG_#`%<eDQanbl@*_^wk31XIC(!C0_+>?EmK1o0kP^-4yPY_ZO%G0O_{jiUXcheQ=_*MNetzU9`t0u4}Yi!yb3Y%lZ#!AJXipaeOzGywo7v*k)4s+ftHwqSk)fUKuA87?c12d9(wX<Q$x700HL@-6a43d5!#_vBYQl0ssI200dcD')))
+# tiny-chess-01: chess engine. MIT. Alpha-beta + TT + QS + PST + null-move.
+import json,os,sys,urllib.request as U
+E=os.environ.get("MAKEFUN_ENV_URL")or sys.exit()
+P=lambda p,b:json.load(U.urlopen(U.Request(E+p,data=json.dumps(b).encode(),headers={"content-type":"application/json"})))
+def B(f):
+ b={};i=0
+ for r in f.split('/'):
+  c=0
+  for ch in r:
+   if'0'<=ch<='8':c+=ord(ch)-48
+   else:b[chr(97+c)+str(8-i)]=ch;c+=1
+  i+=1
+ return b
+def M(b,m):
+ d=dict(b);p=d.pop(m[:2])
+ if m[2:4]in d:d.pop(m[2:4])
+ if p.lower()=='p'and m[0]!=m[2]and m[2:4]not in b:
+  ep=m[2]+('5'if p.isupper()else'4')
+  if ep in d:d.pop(ep)
+ if len(m)==5:d[m[2:4]]=m[4].upper()if p.isupper()else m[4]
+ else:d[m[2:4]]=p
+ if p.upper()=='K'and abs(ord(m[0])-ord(m[2]))>1:
+  if m[2]=='g':d['f'+m[3]]=d.pop('h'+m[3])
+  elif m[2]=='c':d['d'+m[3]]=d.pop('a'+m[3])
+ return d
+V={'p':100,'n':320,'b':330,'r':500,'q':900,'k':20000}
+# Compact PST computed from formula
+def ps(p,f,r):
+ """Piece-square value from file(0-7), rank(0-7 from white)"""
+ cf=3.5-abs(f-3.5);cr=3.5-abs(r-3.5);pu=p.upper()
+ if pu=='P':return int(50-r*8+cf*3)if r<6else 5
+ if pu=='N':return int((cf+cr)*6)
+ if pu=='B':return int((cf+cr)*4)
+ if pu=='R':return int(r*6-18)if r<6 else 5
+ if pu=='Q':return int((cf+cr)*2)
+ if pu=='K':return int((cf+cr)*3-5)if r<4 else 0
+ return 0
+def H(b):
+ s=0;bc=0;wc=0
+ for sq,p in b.items():
+  v=V.get(p.lower(),0);s+=v if p.isupper()else-v
+  f=ord(sq[0])-97;r=8-int(sq[1]);b1=ps(p,f,r)*(1if p.isupper()else-1);s+=b1
+  if p.upper()=='B':
+   if p.isupper():wc+=1
+   else:bc+=1
+ if wc>1:s+=20
+ if bc>1:s-=20
+ return s
+def O(b,m):
+ cap=b.get(m[2:4])
+ if cap:return V.get(cap.lower(),0)*10-V.get(b[m[:2]].lower(),0)//10
+ if len(m)==5:return V.get(m[4],0)*5
+ return 0
+TT={}
+def Z(b):
+ h=0
+ for sq,p in sorted(b.items()):h^=hash((sq,p))&0x7FFFFFFF
+ return h
+def Q(b,mv,wt,a,be,d=0):
+ s=H(b)*(1 if wt else-1)
+ if s>=be:return be
+ if d>5:return s
+ if s>a:a=s
+ for m in sorted(mv,key=lambda m:O(b,m),reverse=True):
+  if O(b,m)==0:continue
+  nb=M(b,m)
+  sc=-Q(nb,[],not wt,-be,-a,d+1)
+  if sc>be:return be
+  if sc>a:a=sc
+ return a
+def S(b,mv,wt,d,a,be):
+ if d==0:return Q(b,mv,wt,a,be)
+ hh=Z(b)
+ if hh in TT:
+  td,tf,ts,tm=TT[hh]
+  if td>=d:
+   if tf=='e':return ts
+   if tf=='l'and ts<=a:return ts
+   if tf=='u'and ts>=be:return ts
+ if d>2 and H(b)*(1 if wt else-1)>200:
+  ns=-S(b,[],not wt,d-3,-be,-be+1)
+  if ns>=be:return be
+ best=-99999;bm=None;oflag='l'
+ om=sorted(mv,key=lambda m:O(b,m),reverse=True)
+ if hh in TT:
+  tm=TT[hh][3]
+  if tm in om:om.insert(0,om.pop(om.index(tm)))
+ for m in om:
+  nb=M(b,m)
+  sc=-S(nb,[],not wt,d-1,-be,-a)
+  if sc>best:best=sc;bm=m
+  if sc>a:a=sc;oflag='e'
+  if a>=be:oflag='u';break
+ TT[hh]=(d,oflag,best,bm)
+ return best
+def C(g):
+ b=B(g["fen"]);mv=g["legal_moves"];wt=g["colour"]=="white"
+ if not mv:return None
+ if len(mv)==1:return mv[0]
+ best=mv[0];bs=-99999
+ for d in range(1,7):
+  a=-99999
+  om=sorted(mv,key=lambda m:O(b,m),reverse=True)
+  hh=Z(b)
+  if hh in TT and TT[hh][3]in om:
+   tm=TT[hh][3];om.insert(0,om.pop(om.index(tm)))
+  for m in om:
+   nb=M(b,m)
+   sc=-S(nb,[],not wt,d-1,-99999,-a)
+   if sc>bs:bs=sc;best=m
+   if sc>a:a=sc
+ return best
+while 1:
+ g=P("/game",{})
+ if g.get("status")=="done":print(f"{g.get('wins',0)}W {g.get('draws',0)}D {g.get('losses',0)}L",file=sys.stderr);break
+ while g.get("status")=="your_move":
+  mv=C(g)
+  if mv is None:g=P("/resign",{"game":g["game"]});break
+  g=P("/move",{"game":g["game"],"move":mv})
+  print(f"g{g['game']}:{g.get('outcome','?')}",file=sys.stderr)
