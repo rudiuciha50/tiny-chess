@@ -1,9 +1,10 @@
-# Tiny Chess Engine
+# Tiny Chess Engine — αβ + TT + QS + PST
 
-[![make.fun](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01)
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/rudiuciha50/tiny-chess/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/rudiuciha50/tiny-chess/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-A chess engine in ≤4096 bytes of Python, using alpha-beta search with transposition table, quiescence search, piece-square tables, null-move pruning, and iterative deepening.
-
-Plays through the make.fun chess env at MAKEFUN_ENV_URL.
+Chess engine in ≤4096 bytes of Python for the [make.fun tiny-chess-01](https://make.fun/bounty/tiny-chess-01) bounty.
+Built with alpha-beta search, transposition table, quiescence search, piece-square tables, and null-move pruning.
 
 ## License — MIT
