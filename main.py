@@ -4,7 +4,7 @@ E=os.environ.get("MAKEFUN_ENV_URL")or sys.exit()
 P=lambda p,b:json.load(U.urlopen(U.Request(E+p,data=json.dumps(b).encode(),headers={"content-type":"application/json"})))
 def B(f):
  b={};i=0
- for r in f.split('/'):
+ for r in f.split()[0].split('/'):
   c=0
   for ch in r:
    if'0'<=ch<='8':c+=ord(ch)-48
