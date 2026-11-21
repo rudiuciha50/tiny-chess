@@ -1,4 +1,4 @@
-# chess engine. MIT. tiny-chess-01. Depth-limited alpha-beta with capture ordering.
+# chess engine. MIT. tiny-chess-01. v2: PST eval + tactical search
 import json,os,sys,urllib.request as U,urllib.error as UE
 E=os.environ.get("MAKEFUN_ENV_URL")or sys.exit()
 def P(p,b):
@@ -20,36 +20,86 @@ def M(b,m):
  d=dict(b);p=d.pop(m[:2])
  if m[2:4]in d:d.pop(m[2:4])
  if p.lower()=='p'and m[0]!=m[2]and m[2:4]not in b:
-  ep=m[2]+('5'if p.isupper()else'4')
-  d.pop(ep,0)
+  ep=m[2]+('5'if p.isupper()else'4');d.pop(ep,0)
  if len(m)==5:d[m[2:4]]=m[4].upper()if p.isupper()else m[4]
  else:d[m[2:4]]=p
  if p.upper()=='K'and abs(ord(m[0])-ord(m[2]))>1:
   if m[2]=='g':d['f'+m[3]]=d.pop('h'+m[3])
   elif m[2]=='c':d['d'+m[3]]=d.pop('a'+m[3])
  return d
+# Positional eval: center control + pawn structure
 def H(b):
  s=0
- for p in b.values():s+=V[p.lower()]*(1if p.isupper()else-1)
+ for sq,p in b.items():
+  f=ord(sq[0])-97;r=int(sq[1])-1;v=V[p.lower()]
+  # Center distance bonus (0 at edges, 7 at e4/d4)
+  c=max(0,int(7-abs(f-3.5)-abs(r-3.5)))
+  # Pawn advancement
+  a=0
+  if p.lower()=='p':a=(r-1)*3 if p.isupper()else(6-r)*3
+  s+=(v+c*2+a)*(1 if p.isupper()else-1)
  return s
 def R(b,m):
- """Move ordering: captures by MVV-LVA"""
+ """Move ordering: captures by MVV-LVA, non-captures by center bonus."""
  c=b.get(m[2:4])
  if c:return V[c.lower()]*10-V[b[m[:2]].lower()]
- return 0
-# At root: use env legal_moves (guaranteed legal)
-# Search: use env legal_moves only (no self-generated moves = no illegal moves)
-def Q(b,mv,wt,a,be,d=0):
- """Quiescence: extend captures only, using env-provided moves"""
- s=H(b)*(1if wt else-1)
+ sq=m[2:4];f=ord(sq[0])-97;r=int(sq[1])-1
+ return max(0,int(7-abs(f-3.5)-abs(r-3.5)))
+# Capture generator for quiescence search
+def G(b,w):
+ """Generate all pseudo-legal captures for side w."""
+ m=[];D=[-9,-7,7,9];O=[-8,-1,1,8];N=[-17,-15,-10,-6,6,10,15,17]
+ for s,p in list(b.items()):
+  if(w and p.isupper())or(not w and p.islower()):
+   pc=p.lower();f=ord(s[0])-97;r=int(s[1])-1;i=r*8+f
+   T=lambda t:chr(97+t%8)+str(t//8+1)
+   E=lambda t:t in b and(b[t].isupper()!=w)
+   if pc=='n':
+    for d in N:
+     t=i+d
+     if 0<=t<64 and abs(t%8-f)+abs(t//8-r)==3:
+      ts=T(t)
+      if E(ts):m.append(s+ts)
+   elif pc=='k':
+    for d in D+O:
+     t=i+d
+     if 0<=t<64 and abs(t%8-f)<=1 and abs(t//8-r)<=1:
+      ts=T(t)
+      if E(ts):m.append(s+ts)
+   else:
+    dr=[]
+    if pc in'bq':dr+=D
+    if pc in'rq':dr+=O
+    for d in dr:
+     t=i
+     while 1:
+      t+=d
+      if not(0<=t<64):break
+      if d in D and abs(t%8-i%8)!=abs(t//8-i%8):break
+      if d in O and t%8!=i%8 and t//8!=i%8:break
+      ts=T(t)
+      if ts in b:
+       if E(ts):m.append(s+ts)
+       break
+    if pc=='p':
+     pd=8 if w else-8
+     for df in[-1,1]:
+      t=i+pd+df
+      if 0<=t<64 and abs(t%8-f)==1:
+       ts=T(t)
+       if E(ts):m.append(s+ts)
+ return m
+def Q(b,w,a,be,d=0):
+ """Quiescence: extend captures only, using self-generated moves."""
+ s=H(b)*(1 if w else-1)
  if s>=be:return be
  if d>3:return s
  if s>a:a=s
- caps=sorted([m for m in mv if m[2:4]in b],key=lambda m:R(b,m),reverse=True)
+ caps=sorted(G(b,w),key=lambda m:R(b,m),reverse=True)
  for m in caps:
   nb=M(b,m)
-  sc=-Q(nb,[],not wt,-be,-a,d+1)
-  if sc>be:return be
+  sc=-Q(nb,not w,-be,-a,d+1)
+  if sc>=be:return be
   if sc>a:a=sc
  return a
 def C(g):
@@ -57,14 +107,10 @@ def C(g):
  if not mv:return None
  if len(mv)==1:return mv[0]
  best=mv[0];bs=-99999
- # Simple 1-ply with quiescence: fast and safe
- for m in sorted(mv,key=lambda m:R(b,m),reverse=True):
+ mv.sort(key=lambda m:R(b,m),reverse=True)
+ for m in mv:
   nb=M(b,m)
-  # Eval opponent's best capture response
-  sc=-H(nb)*(1if not wt else-1)
-  # Add quiescence on captures
-  if R(b,m)>0:
-   sc=-Q(nb,[],not wt,-99999,99999)
+  sc=-Q(nb,not wt,-99999,99999)
   if sc>bs:bs=sc;best=m
  return best
 while 1:
@@ -72,7 +118,6 @@ while 1:
  if g.get("status")=="done":print(f"{g.get('wins',0)}W {g.get('draws',0)}D {g.get('losses',0)}L",file=sys.stderr);break
  while g.get("status")=="your_move":
   mv=C(g)
-  if mv is None:
-   g=P("/resign",{"game":g["game"]});break
+  if mv is None:g=P("/resign",{"game":g["game"]});break
   g=P("/move",{"game":g["game"],"move":mv})
   print(f"g{g['game']}:{g.get('outcome','?')}",file=sys.stderr)
